@@ -1,0 +1,27 @@
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0px 63px;
+
+	.title {
+		height: 17px;
+	}
+	.menu {
+		height: 14px;
+		.total {
+			font-size: 13px;
+			line-height: 14px;
+			display: inline-block;
+			padding: 0px 20px;
+			border-left: 2px solid black;
+		}
+		.left {
+			margin-right: 10px;
+		}
+	}
+	@media screen and (max-width: 900px) {
+		.menu {
+			display: none;
+		}
+	}
+}

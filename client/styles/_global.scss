@@ -1,0 +1,79 @@
+.root {
+	height: 90vh;
+	margin: 0px 94px;
+	font-family: Arial;
+	@media screen and (max-width: 500px) {
+		margin: 0px 40px;
+	}
+}
+
+body {
+	min-width: 500px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 20px 0px 0px 0px;
+	justify-content: space-between;
+	@media screen and (max-width: 600px) {
+		justify-content: center;
+	}
+	.card {
+		margin-bottom: 40px;
+		display: flex;
+		align-items: center;
+		max-width: 260px;
+		width: auto;
+		min-width: auto !important;
+		.ant-card-body {
+			padding: unset;
+			img {
+				width: 100%;
+				object-fit: contain;
+				height: 170px;
+			}
+			span {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.name {
+				padding-top: 6px;
+				font-weight: 500;
+				font-size: 18px;
+			}
+		}
+	}
+	.ant-checkbox-wrapper {
+		position: relative;
+		z-index: 2;
+		left: 230px;
+		bottom: 64px;
+	}
+
+	.upload {
+		display: flex;
+		justify-content: center;
+	}
+}
+.load-more {
+	cursor: pointer;
+	text-align: center;
+	margin-top: -20px;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.no-files-placeholder {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding: 60px 0px 48px 0px;
+}
+.ant-modal-footer {
+	display: flex;
+	justify-content: space-between;
+}
